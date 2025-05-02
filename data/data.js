@@ -4,7 +4,7 @@ const data = [
     "playlist_name": "Summer Vibes",
     "playlist_author": "John Doe",
     "playlist_art": "assets/img/playlist.png",
-    "likes": 1200,
+    "likes": 0,
     "songs": [
       {
         "songID": 101,
