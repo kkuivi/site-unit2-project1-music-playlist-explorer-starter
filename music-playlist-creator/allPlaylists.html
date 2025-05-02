@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Music Playlist Explorer</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-gradient-to-r from-purple-600 to-blue-500 p-6 shadow-lg">
+      <div class="flex items-center justify-between">
+        <h1 class="text-4xl font-bold text-white text-center">Music Playlist Explorer</h1>
+        <nav>
+          <a href="index.html" class="text-white hover:underline text-lg">Featured</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8"> 
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 playlist-cards">
+        </div>
+    </main>
+
+    <div id="playlistModal" class="fixed inset-0 hidden items-center justify-center z-50" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div id="modalContent" class="bg-white rounded-3xl shadow-xl w-full max-w-3xl mx-4 overflow-hidden transform transition-all duration-300 opacity-0 scale-95 max-h-[90vh] flex flex-col">
+            <!-- Modal Header -->
+            <div class="flex items-center p-8 pb-4 border-b">
+                <!-- Playlist Image -->
+                <div class="flex-shrink-0">
+                    <img id="modalPlaylistImage" src="" alt="Playlist Cover" class="w-40 h-40 object-cover rounded-lg border border-gray-200 bg-gray-100">
+                </div>
+                <!-- Playlist Info -->
+                <div class="ml-8 flex flex-col justify-center">
+                    <h3 id="modalPlaylistTitle" class="text-3xl font-bold text-gray-800 mb-2"></h3>
+                    <p id="modalPlaylistCreator" class="text-xl text-gray-500"></p>
+                </div>
+                <button class="ml-auto text-gray-400 hover:text-gray-700 focus:outline-none" onclick="closeModal()">
+                    <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Song List -->
+            <div class="p-8 pt-4">
+                <div class="flex justify-end mb-4">
+                  <button id="shuffleBtn" class="flex items-center gap-2 bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path d="M16 3h5v5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M4 20l16-16" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M21 16v5h-5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M15 15l6 6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Shuffle
+                  </button>
+                </div>
+                <div id="modalSongList" class="space-y-4 overflow-y-auto max-h-[45vh]">
+                    <!-- Songs will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+    <script src="data/data.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // Ensure playlists are loaded when this page loads
+      if (typeof loadPlaylists === 'function') {
+        loadPlaylists();
+      }
+    </script>
+</body>
+</html>

@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Music Playlist Explorer</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Music Playlist Explorer - Featured</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <!-- Your header content here -->
-    </header>
+  <header class="bg-gradient-to-r from-purple-600 to-blue-500 p-6 shadow-lg">
+    <div class="flex items-center justify-between py-4 px-2">
+      <h1 class="text-2xl font-bold text-white">Music Playlist Explorer</h1>
+      <nav>
+        <a href="allPlaylists.html" class="text-white hover:underline text-lg">All Playlists</a>
+      </nav>
+    </div>
+  </header> 
 
-    <main> 
-        <!-- Your main content here -->
-    </main>
+  <main class="container mx-auto px-4 py-8">
+    <div id="featuredPlaylist" class="flex flex-col md:flex-row gap-8"></div>
+  </main>
 
-    <footer>
-        <!-- Your footer content here -->
-    </footer>
-    <script src="data/data.js"></script>
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2024 Music Playlist Explorer</p>
+  </footer>
+  <script src="data/data.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Display a random featured playlist when the page loads
+    if (typeof renderFeaturedPlaylist === 'function') {
+      renderFeaturedPlaylist();
+    }
+  </script>
 </body>
 </html>
