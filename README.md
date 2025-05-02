@@ -10,52 +10,52 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 
 #### CORE FEATURES
 
-- [ ] **Display Playlists**
-  - [ ] Dynamically render playlists on the homepage using JavaScript.
-    - [ ] Playlists should be shown in grid view.
-    - [ ] Playlist images should be reasonably sized (at least 6 playlists on your laptop when full screen; large enough that the playlist components detailed in the next feature are legible).
-  - [ ] Fetch data from a provided Javascript file and use it to create interactive playlist tiles.
+- [X] **Display Playlists**
+  - [X] Dynamically render playlists on the homepage using JavaScript.
+    - [X] Playlists should be shown in grid view.
+    - [X] Playlist images should be reasonably sized (at least 6 playlists on your laptop when full screen; large enough that the playlist components detailed in the next feature are legible).
+  - [X] Fetch data from a provided Javascript file and use it to create interactive playlist tiles.
 
-- [ ] **Playlist Components**
-  - [ ] Each tile should display the playlist's:
-    - [ ] Cover image
-    - [ ] Name
-    - [ ] Author
-    - [ ] Like count
+- [X] **Playlist Components**
+  - [X] Each tile should display the playlist's:
+    - [X] Cover image
+    - [X] Name
+    - [X] Author
+    - [X] Like count
 
-- [ ] **Playlist Details**
-  - [ ] Create a modal pop-up view that displays detailed information about a playlist when a user clicks on a playlist tile.
-  - [ ] The modal should show the playlist's:
-    - [ ] Cover image
-    - [ ] Name
-    - [ ] Author
-    - [ ] List of songs, including each song's:
-      - [ ] Title
-      - [ ] Artist
-      - [ ] Duration
-  - [ ] The modal itself should:
-    - [ ] Not occupy the entire screen.
-    - [ ] Have a shadow to show that it is a pop-up.
-    - [ ] Appear floating on the screen.
-    - [ ] The backdrop should appear darker or in a different shade.
+- [X] **Playlist Details**
+  - [X] Create a modal pop-up view that displays detailed information about a playlist when a user clicks on a playlist tile.
+  - [X] The modal should show the playlist's:
+    - [X] Cover image
+    - [X] Name
+    - [X] Author
+    - [X] List of songs, including each song's:
+      - [X] Title
+      - [X] Artist
+      - [X] Duration
+  - [X] The modal itself should:
+    - [X] Not occupy the entire screen.
+    - [X] Have a shadow to show that it is a pop-up.
+    - [X] Appear floating on the screen.
+    - [X] The backdrop should appear darker or in a different shade.
 
-- [ ] **Like Playlists**
-  - [ ] Implement functionality to allow users to like playlists by clicking a heart icon on each playlist tile.
-  - [ ] When the heart icon is clicked:
-    - [ ] If previously unliked:
-      - [ ] The like count on the playlist tile should increase by 1.
-      - [ ] There should be visual feedback (such as the heart turning a different color) to show that the playlist has been liked by the user.
-    - [ ] If previously liked:
-      - [ ] The like count on the playlist tile should decrease by 1.
-      - [ ] There should be visual feedback (such as the heart turning a different color) to show that the playlist has been unliked by the user.
-    - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please film yourself liking and unliking:
-      - [ ] a playlist with a like count of 0
-      - [ ] a playlist with a non-zero like count
+- [X] **Like Playlists**
+  - [X] Implement functionality to allow users to like playlists by clicking a heart icon on each playlist tile.
+  - [X] When the heart icon is clicked:
+    - [X] If previously unliked:
+      - [X] The like count on the playlist tile should increase by 1.
+      - [X] There should be visual feedback (such as the heart turning a different color) to show that the playlist has been liked by the user.
+    - [X] If previously liked:
+      - [X] The like count on the playlist tile should decrease by 1.
+      - [X] There should be visual feedback (such as the heart turning a different color) to show that the playlist has been unliked by the user.
+    - [X] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please film yourself liking and unliking:
+      - [X] a playlist with a like count of 0
+      - [X] a playlist with a non-zero like count
 
-- [ ] **Shuffle Songs**
-  - [ ] Enable users to shuffle the songs within a playlist using a shuffle button in the playlist's detail modal.
-  - [ ] When the shuffle button is clicked, the playlist's songs should display in a different order.
-  - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself shuffling the same playlist more than once. 
+- [X] **Shuffle Songs**
+  - [X] Enable users to shuffle the songs within a playlist using a shuffle button in the playlist's detail modal.
+  - [X] When the shuffle button is clicked, the playlist's songs should display in a different order.
+  - [X] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself shuffling the same playlist more than once. 
 
 #### STRETCH FEATURES
 
