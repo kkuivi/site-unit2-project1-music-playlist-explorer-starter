@@ -210,28 +210,3 @@ async function renderFeaturedPlaylist() {
     </div>
   `;
 }
-
-// Example usage:
-// const playlist = {
-//     title: "Summer Vibes",
-//     creator: "John Doe",
-//     likes: 1200,
-//     imageUrl: "assets/img/playlist.png"
-// };
-// const cardHTML = createPlaylistCard(playlist);
-// document.querySelector('.playlist-cards').innerHTML = cardHTML;
-
-// Call the function to load playlists on page load
-// loadPlaylists();
-
-// async function fetchRandomPlaylist() {
-//   if (!window.data || !Array.isArray(data)) {
-//     console.error('Playlist data not found!');
-//     return;
-//   }
-//   //const response = await fetch('data/data.json');
-//   const playlists = data;
-//   if (!playlists || playlists.length === 0) return null;
-//   const randomIndex = Math.floor(Math.random() * playlists.length);
-//   return playlists[randomIndex];
-// }
