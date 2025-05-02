@@ -4,7 +4,7 @@ Submitted by: **NAME**
 
 Estimated time spent: **#** hours spent in total
 
-Deployed Application (**required**): [Music Playlist Explorer Deployed Site]([ADD_LINK_HERE](https://site-unit2-project1-music-playlist-explorer-starter-rho.vercel.app/))
+Deployed Application (**required**): [Music Playlist Explorer Deployed Site](https://site-unit2-project1-music-playlist-explorer-starter-rho.vercel.app/)
 
 ### Application Features
 
